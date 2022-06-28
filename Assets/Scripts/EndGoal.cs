@@ -16,6 +16,7 @@ public class EndGoal : MonoBehaviour
         {
             StartCoroutine(WaitForLevelChange());
             confetti.SetActive(true);
+            GameManager.Instance.PlayVictoryAudio();
         }
     }
 

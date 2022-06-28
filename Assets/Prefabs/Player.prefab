@@ -1328,6 +1328,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 22c766ac6a82b3c43b16e6c1a41d0e41, type: 3}
   - {fileID: 8300000, guid: a7ac4fe16a275354b9679f00d7b955ca, type: 3}
   - {fileID: 8300000, guid: d8a8a802c55a4104797ce0f6a02a7fdd, type: 3}
+  mustardClip: {fileID: 8300000, guid: 51874d61d0c11c84dbdc8b4e4512b020, type: 3}
   deathParticles: {fileID: 0}
 --- !u!65 &4021756011378481348
 BoxCollider:

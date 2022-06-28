@@ -7,6 +7,7 @@ public class PlayerCollision : MonoBehaviour
     public CapsuleTouchScript movement;
 
     public AudioClip[] deathClip;
+    public AudioClip mustardClip;
     private AudioSource source;
 
     public ParticleSystem deathParticles;
@@ -21,6 +22,8 @@ public class PlayerCollision : MonoBehaviour
         if (collisionInfo.gameObject.layer == 7)    // mustard layer
         {
             Destroy(collisionInfo.gameObject);
+            source.PlayOneShot(mustardClip);
+
         }
         else if (collisionInfo.gameObject.layer == 8)    // fork layer
         {
@@ -31,9 +34,6 @@ public class PlayerCollision : MonoBehaviour
             deathParticles = collisionInfo.GetComponent<ParticleSystem>();
 
             deathParticles.Play();
-
-            //Camera.main.transform.Translate(new Vector3(0, 0, 5 * Time.deltaTime), Space.World);
-            
 
             if (!GameManager.Instance.deathSoundPlayed)
             {

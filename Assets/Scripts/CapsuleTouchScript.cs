@@ -5,7 +5,6 @@ using UnityEngine;
 public class CapsuleTouchScript : MonoBehaviour
 {
     Ray ray;
-    //RaycastHit hit;
     public Rigidbody kobaja;
  
     bool mousePressed;
@@ -27,12 +26,11 @@ public class CapsuleTouchScript : MonoBehaviour
 
             ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
-                mousePressed = true;
+            mousePressed = true;
 
-            //startPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
             startPoint = new Vector3(kobaja.transform.position.x, kobaja.transform.position.y, 0);
 
-                lineRend.enabled = true;
+            lineRend.enabled = true;
         }
 
         if (lineRend.enabled)

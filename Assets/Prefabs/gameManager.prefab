@@ -54,8 +54,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bfde384cce6962e408667518a69c8494, type: 3}
   - {fileID: 8300000, guid: 42bdeaae46c2a674b8a734e3cf1a384a, type: 3}
   - {fileID: 8300000, guid: 4877c57abaad61b49a2df19d8ec8f5f3, type: 3}
+  victoryClip: {fileID: 8300000, guid: f070eae63cb7c5a4d9f07bf0934c1df1, type: 3}
   deathSoundPlayed: 0
   tapToPlayCanvas: {fileID: 0}
-  awesomeTexts:
-  - {fileID: 3559861719151316989, guid: 90232f7a8193f944d926814308ba245a, type: 3}
-  - {fileID: 4895043320172649732, guid: f83ac580e80d7da47a2663693195a9e9, type: 3}

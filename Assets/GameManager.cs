@@ -10,11 +10,12 @@ public class GameManager : MonoBehaviour
     bool gameHasEnded = false;
     public float restartDelay = 2f;
 
-    public static int level;
+    [SerializeField] public static int level;
 
     public bool hitSoundPlayed = false;
     public AudioSource audioSource;
     public AudioClip[] hitClip;
+    public AudioClip victoryClip;
     public bool deathSoundPlayed = false;
 
     [SerializeField] GameObject tapToPlayCanvas;
@@ -34,6 +35,8 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+
+        Application.targetFrameRate = 60;
         
     }
     public void TapToPlay()
@@ -60,5 +63,10 @@ public class GameManager : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene("LVL" + (level + 1).ToString());
+    }
+
+    public void PlayVictoryAudio()
+    {
+        audioSource.PlayOneShot(victoryClip);
     }
 }
